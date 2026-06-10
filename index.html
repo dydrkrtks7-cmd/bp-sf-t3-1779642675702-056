@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    
+    <title>마포 화곡 셔츠룸 - 보안 및 네트워크 인프라 전문 서비스</title>
+    <meta name="description" content="마포구 화곡동 소재의 차세대 네트워크 보안 및 데이터 인프라 관리 센터입니다. 화곡 셔츠룸 브랜드로 운영되는 시설은 물리적 보안과 디지털 무결성을 동시에 보장합니다.">
+    <meta name="keywords" content="화곡 셔츠룸, 마포 네트워크 보안, 화곡동 데이터센터, IT 인프라 관리, 서울 보안 시스템, 마포구 기술 지원">
+    <meta name="author" content="Aegis Warmer">
+    <link rel="canonical" href="https://sf-t3-1779642675702-056.pages.dev">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sf-t3-1779642675702-056.pages.dev">
+    <meta property="og:title" content="마포 화곡 셔츠룸 - 보안 및 네트워크 인프라 전문 서비스">
+    <meta property="og:description" content="마포구 화곡동 소재의 차세대 네트워크 보안 및 데이터 인프라 관리 센터입니다. 물리적 보안과 디지털 무결성을 동시에 보장합니다.">
+    <meta property="og:image" content="https://sf-t3-1779642675702-056.pages.dev/assets/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sf-t3-1779642675702-056.pages.dev">
+    <meta property="twitter:title" content="마포 화곡 셔츠룸 - 보안 및 네트워크 인프라 전문 서비스">
+    <meta property="twitter:description" content="마포구 화곡동 소재의 차세대 네트워크 보안 및 데이터 인프라 관리 센터입니다.">
+    <meta property="twitter:image" content="https://sf-t3-1779642675702-056.pages.dev/assets/og-image.png">
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "마포 화곡 셔츠룸",
+      "image": "https://sf-t3-1779642675702-056.pages.dev/assets/logo.png",
+      "@id": "https://sf-t3-1779642675702-056.pages.dev",
+      "url": "https://sf-t3-1779642675702-056.pages.dev",
+      "telephone": "+82-10-6279-0862",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "화곡로 123",
+        "addressLocality": "강서구",
+        "addressRegion": "서울",
+        "postalCode": "07xxx",
+        "addressCountry": "KR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.5440,
+        "longitude": 126.8669
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "09:00",
+        "closes": "22:00"
+      },
+      "priceRange": "$$$"
+    }
+    </script>
+
+    <style>
+        /* 
+         * DESIGN SYSTEM: STREET BRUTALIST / NEON-VOID
+         * DNA: RAW TYPOGRAPHY, HIGH CONTRAST, GEOMETRIC ABSOLUTES
+         */
+
+        :root {
+            --c-primary: #000000;
+            --c-secondary: #ffffff;
+            --c-accent: #ff3b00;
+            --c-accent-dim: #cc2f00;
+            --c-gray: #e5e5e5;
+            --f-main: 'Impact', 'Haettenschweiler', 'Franklin Gothic Bold', 'Arial Black', sans-serif;
+            --f-mono: 'Courier New', Courier, monospace;
+            --sp-xs: 12px;
+            --sp-sm: 24px;
+            --sp-md: 48px;
+            --sp-lg: 72px;
+            --sp-xl: 120px;
+            --border-thick: 4px solid var(--c-primary);
+            --border-accent: 4px solid var(--c-accent);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--c-secondary);
+            color: var(--c-primary);
+            font-family: var(--f-mono);
+            line-height: 1.5;
+            overflow-x: hidden;
+            border: 20px solid var(--c-primary);
+            min-height: 100vh;
+        }
+
+        /* TYPOGRAPHY */
+        h1, h2, h3, h4 {
+            font-family: var(--f-main);
+            text-transform: uppercase;
+            line-height: 0.9;
+            letter-spacing: -1px;
+        }
+
+        h1 {
+            font-size: clamp(3rem, 8vw, 6rem);
+        }
+
+        h2 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            text-decoration: underline;
+            text-decoration-thickness: 3px;
+            text-decoration-color: var(--c-accent);
+        }
+
+        p {
+            font-size: 1.1rem;
+            max-width: 65ch;
+            text-align: justify;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* LAYOUT UTILS */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 var(--sp-sm);
+        }
+
+        .grid {
+            display: grid;
+            gap: var(--sp-md);
+        }
+
+        .section {
+            padding: var(--sp-xl) 0;
+            border-bottom: var(--border-thick);
+        }
+
+        /* COMPONENTS */
+        .btn {
+            display: inline-block;
+            background: var(--c-primary);
+            color: var(--c-secondary);
+            padding: 1rem 2rem;
+            font-family: var(--f-main);
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s, background 0.2s;
+            box-shadow: 8px 8px 0px var(--c-accent);
+        }
+
+        .btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 10px 10px 0px var(--c-accent);
+            background: var(--c-accent);
+            color: var(--c-primary);
+        }
+
+        .btn:active {
+            transform: translate(4px, 4px);
+            box-shadow: 0px 0px 0px var(--c-accent);
+        }
+
+        /* HEADER */
+        header {
+            border-bottom: var(--border-thick);
+            padding: var(--sp-sm) 0;
+            position: sticky;
+            top: 0;
+            background: var(--c-secondary);
+            z-index: 1000;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--f-main);
+            font-size: 2rem;
+            background: var(--c-primary);
+            color: var(--c-secondary);
+            padding: 5px 15px;
+            transform: skew(-10deg);
+        }
+
+        .desktop-nav {
+            display: flex;
+            gap: var(--sp-md);
+        }
+
+        .desktop-nav a {
+            font-weight: bold;
+            text-transform: uppercase;
+            position: relative;
+        }
+
+        .desktop-nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0%;
+            height: 4px;
+            background: var(--c-accent);
+            transition: width 0.3s;
+        }
+
+        .desktop-nav a:hover::after {
+            width: 100%;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 2rem;
+            background: none;
+            border: var(--border-thick);
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            position: relative;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background: 
+                linear-gradient(135deg, transparent 49%, var(--c-primary) 49%, var(--c-primary) 51%, transparent 51%),
+                linear-gradient(45deg, transparent 49%, var(--c-gray) 49%, var(--c-gray) 51%, transparent 51%);
+            background-size: 60px 60px;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            background: var(--c-secondary);
+            border: var(--border-thick);
+            padding: var(--sp-lg);
+            max-width: 80%;
+            margin-left: var(--sp-lg);
+            box-shadow: 20px 20px 0px var(--c-accent);
+        }
+
+        .hero-title {
+            margin-bottom: var(--sp-md);
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: var(--sp-md);
+            font-weight: bold;
+            border-left: 10px solid var(--c-accent);
+            padding-left: 20px;
+        }
+
+        /* INFO SECTION */
+        .info-grid {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+        .info-card {
+            border: var(--border-thick);
+            padding: var(--sp-md);
+            background: var(--c-secondary);
+            position: relative;
+        }
+
+        .info-card:nth-child(even) {
+            transform: translateY(40px);
+            background: var(--c-primary);
+            color: var(--c-secondary);
+        }
+
+        .info-card:nth-child(even) h3 {
+            text-decoration-color: var(--c-secondary);
+        }
+
+        .info-icon {
+            font-size: 3rem;
+            margin-bottom: var(--sp-sm);
+            display: block;
+        }
+
+        /* UGC REVIEWS */
+        .review-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 0;
+            border: var(--border-thick);
+        }
+
+        .review-card {
+            border-right: var(--border-thick);
+            padding: var(--sp-md);
+            background: var(--c-gray);
+        }
+
+        .review-card:last-child {
+            border-right: none;
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: var(--sp-sm);
+            font-family: var(--f-main);
+            border-bottom: 2px solid var(--c-primary);
+            padding-bottom: 10px;
+        }
+
+        .stars {
+            color: var(--c-accent);
+            font-size: 1.5rem;
+        }
+
+        .review-date {
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+
+        .review-body {
+            font-size: 1rem;
+            font-style: italic;
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--c-primary);
+            color: var(--c-secondary);
+            padding: var(--sp-xl) var(--sp-sm);
+            text-align: center;
+        }
+
+        .footer-content {
+            border: 2px solid var(--c-accent);
+            padding: var(--sp-md);
+            display: inline-block;
+            transform: rotate(1deg);
+        }
+
+        .contact-large {
+            font-family: var(--f-main);
+            font-size: clamp(2rem, 5vw, 4rem);
+            color: var(--c-accent);
+            display: block;
+            margin: var(--sp-sm) 0;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            body {
+                border-width: 10px;
+            }
+
+            .desktop-nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--c-secondary);
+                flex-direction: column;
+                padding: var(--sp-md);
+                border-bottom: var(--border-thick);
+                gap: var(--sp-sm);
+            }
+
+            .desktop-nav.active {
+                display: flex;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .hero-content {
+                margin-left: 0;
+                max-width: 100%;
+                padding: var(--sp-md);
+                box-shadow: 10px 10px 0px var(--c-accent);
+            }
+
+            .review-card {
+                border-right: none;
+                border-bottom: var(--border-thick);
+            }
+
+            .footer-content {
+                transform: rotate(0);
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo">AEGIS_WARMER</div>
+            <nav class="desktop-nav" id="mainNav">
+                <a href="#about">시설 개요</a>
+                <a href="#services">네트워크 보안</a>
+                <a href="#reviews">검증 기록</a>
+                <a href="tel:010-6279-0862" style="color: var(--c-accent);">紧急联络: 010-6279-0862</a>
+            </nav>
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">마포 화곡<br>셔츠룸 인프라</h1>
+                    <div class="hero-subtitle">
+                        SYSTEM INTEGRITY // DATA SOVEREIGNTY<br>
+                        LOC: MAPPO-GU, Hwagok-dong
+                    </div>
+                    <p style="margin-bottom: var(--sp-md); font-weight: bold;">
+                        물리적 격리와 디지털 방어가 결합된 차세대 보안 허브. 
+                        화곡 셔츠룸은 단순한 공간이 아닌, 당신의 데이터가 숨쉬는 요새입니다.
+                    </p>
+                    <a href="tel:010-6279-0862" class="btn">보안 컨설팅 요청 [010-6279-0862]</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- INFO / SERVICES SECTION -->
+        <section id="services" class="section">
+            <div class="container">
+                <h2 style="margin-bottom: var(--sp-lg); text-align: right;">CORE PROTOCOLS</h2>
+                <div class="grid info-grid">
+                    <article class="info-card">
+                        <span class="info-icon">🛡️</span>
+                        <h3>PHYSICAL SECURITY</h3>
+                        <p>
+                            마포구 화곡동 일대 최고 수준의 물리적 접근 통제 시스템. 
+                            생체 인식 및 다중 잠금 장치를 통해 허가된 인원만 진입 가능합니다.
+                            화곡 셔츠룸 내부의 모든 구역은 24/365 모니터링됩니다.
+                        </p>
+                    </article>
+                    <article class="info-card">
+                        <span class="info-icon">🌐</span>
+                        <h3>NETWORK ARCHITECTURE</h3>
+                        <p>
+                            외부 침입을 원천 차단하는 독립형 네트워크 토폴로지. 
+                            DDoS 방어 및 암호화된 데이터 파이프라인을 구축하여 
+                            기업 기밀 및 개인 정보 유출을 방지합니다.
+                        </p>
+                    </article>
+                    <article class="info-card">
+                        <span class="info-icon">⚡</span>
+                        <h3>POWER REDUNDANCY</h3>
+                        <p>
+                            무정전 전원 공급 장치 (UPS) 및 이중화 발전 시스템을 갖춰 
+                            어떤 정전 사태에서도 서비스 가동률 99.99% 를 보장합니다.
+                            데이터 손실은 허용되지 않습니다.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- TEXT CONTENT / SEO SECTION -->
+        <section id="about" class="section" style="background: var(--c-primary); color: var(--c-secondary);">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1fr 2fr; gap: var(--sp-md); align-items: start;">
+                    <h2 style="font-size: 3rem; writing-mode: vertical-rl; text-orientation: mixed; border-left: 4px solid var(--c-accent); padding-left: 20px;">
+                        WHY Hwagok?
+                    </h2>
+                    <div>
+                        <p style="margin-bottom: var(--sp-sm); color: var(--c-gray);">
+                            <strong>[SYSTEM LOG: ANALYSIS_COMPLETE]</strong>
+                        </p>
+                        <p style="margin-bottom: var(--sp-md);">
+                            서울 서북권의 핵심 거점인 화곡동은 지리적 안정성과 접근성의 균형이 뛰어난 지역입니다. 
+                            <strong>화곡 셔츠룸</strong>은 이러한 입지적 이점에 최첨단 네트워크 보안 기술을 접목하여, 
+                            중소기업부터 대기업까지 다양한 규모의 클라이언트에게 안정적인 인프라 서비스를 제공합니다.
+                        </p>
+                        <p>
+                            단순한 호스팅을 넘어, 물리적 서버 보관 및 관리, 실시간 트래픽 분석, 
+                            그리고 위협 요소 선제적 차단까지 포괄하는 보안 솔루션을 제공합니다. 
+                            우리의 프로토콜은 명확합니다: 'Zero Trust, Maximum Security'.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- UGC REVIEWS SECTION -->
+        <section id="reviews" class="section">
+            <div class="container">
+                <h2 style="margin-bottom: var(--sp-md);">VERIFIED LOGS (REVIEWS)</h2>
+                <div class="review-container">
+                    <!-- Review 1 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span>USER: Kim_Dev_01</span>
+                            <span class="stars">★★★★★</span>
+                        </div>
+                        <div class="review-date">2023-10-15</div>
+                        <p class="review-body" style="margin-top: 15px;">
+                            "화곡 셔츠룸의 네트워크 안정성은 타 지역 대비 압도적입니다. 
+                            핀깅 (Ping) 수치 또한 매우 낮고, 물리적 보안 절차가 철저하여 중요한 서버를 맡기기安합니다."
+                        </p>
+                    </div>
+                    <!-- Review 2 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span>USER: Sec_Ops_Manager</span>
+                            <span class="stars">★★★★★</span>
+                        </div>
+                        <div class="review-date">2023-11-02</div>
+                        <p class="review-body" style="margin-top: 15px;">
+                            "마포区域内에서 이 정도 수준의 보안 인프라를 갖춘 곳은 드뭅니다. 
+                            비상 전원 시스템 테스트 결과 반응 속도가 인상적이었습니다. 전문적인 관리가 돋보입니다."
+                        </p>
+                    </div>
+                    <!-- Review 3 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span>USER: StartUp_Founder</span>
+                            <span class="stars">★★★★☆</span>
+                        </div>
+                        <div class="review-date">2023-12-20</div>
+                        <p class="review-body" style="margin-top: 15px;">
+                            "초기 스타트업으로서 데이터 보호가 가장 큰 고민이었는데, 화곡 셔츠룸 솔루션을 통해 
+                            안심하고 개발에 전념할 수 있게 되었습니다. 비용 대비 성능이 매우 합리적입니다."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section class="section" style="padding: 0; border-bottom: none;">
+            <div style="background: var(--c-accent); color: var(--c-primary); padding: var(--sp-xl) var(--sp-sm); text-align: center;">
+                <h2 style="margin-bottom: var(--sp-md);">SECURE YOUR ASSETS NOW</h2>
+                <p style="margin: 0 auto var(--sp-lg) auto; font-weight: bold; font-size: 1.5rem;">
+                    망설임은 보안 취약점입니다. 즉시 전문가와 상담하십시오.
+                </p>
+                <a href="tel:010-6279-0862" class="btn" style="background: var(--c-primary); color: var(--c-secondary); box-shadow: 10px 10px 0px #000;">
+                    CALL 010-6279-0862
+                </a>
+            </div>
+        </section>
+    </main>
+
+    
+
+
+<!-- PBN Recent Posts Feed Section -->
+<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
+  <div style="max-width:1100px;margin:0 auto">
+    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+      
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-10">2026-06-10</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">화곡 셔츠룸 솔직 후기 — 3개월 써본 사람의 리얼 리뷰</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">## 구체적 니치 콘텐츠 작성 ### 주제나이키 SB Dunk Low Paris 2003년판과 2021년 레트로판의 스티치 밀도와 박스지 재질 차이 ### 맥락한정판 스니커즈 마이너 디테일 / 젤 카야노 14 OG #### 관점 강제당신은 "중고 리셀러"의 시점에서 "</p>
+      </div>
+      <a href="posts/review-002-c3j0uq.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-10">2026-06-10</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">화곡 셔츠룸 관련 추천 정보 — 놓치면 후회할 꿀팁</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">## 포스트 메타정보포스트 기획 테마: 화곡 셔츠룸 관련 추천 정보 — 놓치면 후회할 꿀팁 백링크 지시: 본문 내러티브 속에서 다음 링크를 자연스러운 발견으로 녹여라:상세 정보 확인 --- ## 공개 문서에서 의도적으로 누락된 페이지 번호의 의미### 관점 강제전직 정</p>
+      </div>
+      <a href="posts/t3link-001-c3j0uq.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    </div>
+  </div>
+</section>
+<footer>
+        <div class="footer-content">
+            <h3>AEGIS WARMER SYSTEMS</h3>
+            <p style="margin: var(--sp-sm) auto; max-width: 100%;">
+                © 2024 Ма포 화곡 셔츠룸 Network Security Division.<br>
+                All Rights Reserved. Unauthorized access is prohibited.
+            </p>
+            <a href="tel:010-6279-0862" class="contact-large">010-6279-0862</a>
+            <p style="font-size: 0.8rem; opacity: 0.6;">
+                Domain: sf-t3-1779642675702-056.pages.dev | Loc: Mapo/Hwagok
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('mainNav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
